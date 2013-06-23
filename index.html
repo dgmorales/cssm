@@ -83,16 +83,22 @@
 		</section>
 
 		<section>
-			<h2>As muitas faces de um sysadmin</h2>
-			<p>
-				Mosaico de imagens ?
-			</p>
-			<aside class="notes">
-				Nível 1, 2 ou 3. Generalista ou especialista. Do trabalho operacional
-				mais simples, à depuração ou criação mais complexa. Nós estamos em
-				todas.
-			</aside>
+			<section>
+				<h2>As muitas faces de um sysadmin</h2>
+				<p>
+					Mosaico de imagens ?
+				</p>
+				<aside class="notes">
+					Nível 1, 2 ou 3. Generalista ou especialista. Do trabalho operacional
+					mais simples, à depuração ou criação mais complexa. Nós estamos em
+					todas.
+				</aside>
+			</section>
+			<section>
+				<img src="images/sysadmin-cloud2.svg" width="100%" border="0" style="border:none;vertical-align:middle;" /> 
+			</section>
 		</section>
+
 
 		<section>
 			<section>
@@ -131,6 +137,68 @@
 					quem administrar um servidor apenas poderá acabar tendo
 					contato com CMs.	
 				</aside>
+			</section>
+		</section>
+
+		<section>
+
+			<section>
+			<h2>Resolvendo problemas</h2>
+
+			<p>O primeiro passo muitas vezes é para trás.</p>
+
+			<ul>
+			<li>O usuário pede uma solução xyz.</li>
+			<li>Mas qual o problema?</li>
+			<li>O usuário diz qual é causa do problema.</li>
+			<li>Mas qual é o sintoma?</li>
+			<br/>
+			<li>Qual a extensão do sintoma?</li>
+			<li>Cuidado com o telefone sem fio</li>
+
+			</ul>
+			<aside class="notes">
+				Gente, se pelo título parece que eu vou ter alguma fórmula mágica,
+				bom ... claro que eu não.
+			</aside>
+			</section>
+
+			<section>
+			<h2>Resolvendo problemas (2)</h2>
+
+			<p>Busque a reprodução.</p>
+
+			<ul>
+				<li>Teste <b>antes</b> e depois.</li>
+				<li>Tenha consciência da qualidade do seu teste.</li>
+				<li>Atire na cabeça (causa-raiz).</li>
+			</ul>
+			<aside class="notes">
+				Não atirar na cabeça é botar um "soneca" no problema. O caso
+				mais básico: espaço em disco lotando no servidor. Pescou o
+				problema com o sistema de monitoração, achou uns logs grandes,
+				removeu, liberou espaço e tá se achando o máximo. Mas e daí? x
+				dias depois vai lotar de novo. Como evitar? (logrotate?,
+				applicação tá gerando um erro não esperado que tá aumentando o
+				log?).
+			</aside>
+			</section>
+
+			<section>
+			<h2>Documente!</h2>
+
+			<p>Não para outros. Mas para <b>você mesmo</b>, no futuro.</p>
+			<aside class="notes">
+				Esqueça os outros. Documente para você. Não, você não vai
+				lembrar. Você não precisa.
+			</aside>
+			</section>
+
+		</section>
+
+		<section>
+			<section>
+			<h2>Mil e uma maneiras de pedir ajuda</h2>
 			</section>
 		</section>
 
@@ -266,13 +334,6 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 		</section>
 
 		<section>
-			<h2>Spectacular image!</h2>
-			<a class="image" href="http://lab.hakim.se/meny/" target="_blank">
-				<img width="320" height="299" src="http://s3.amazonaws.com/hakim-static/portfolio/images/meny.png" alt="Meny">
-			</a>
-		</section>
-
-		<section>
 			<section>
 				<h2>Livros, blogs, podcasts</h2>
 				<br/>
@@ -337,6 +398,33 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 					<li>LinuxMag?</li>
 				</ul>
 			</section>
+		</section>
+
+		<section>
+			<h2>Reatividade é o inimigo</h2>
+			<p>E nós não somos garçons</p>
+			<aside class="notes">
+			"The Reatividade Speech"
+
+			Nosso trabalho não é apenas reativo. Aliás, quanto menos reativo e mais
+			pró-ativo a gente conseguir torná-lo, melhor estamos fazendo nosso trabalho.
+			As vezes as circunstâncias forçam a gente em longos  períodos de
+			apenas-reação, mas isso é o inimigo.
+
+			Então se não tem nenhuma força te dizendo o que fazer, que maravilha! Invente
+			algo, pesquise, fuce.
+
+			Vai ser recompensado, só que a recompensa muitas vezes é mais trabalho :)
+
+			A gente joga papo fora ou acessa qq bobagem na internet para descansar, pq
+			merece, pq precisa, pq tá no final do expediente, pq tá de saco cheio, mas
+			jamais pq "não tem nada para fazer".  A gente não é garçon, SEMPRE tem alguma
+			coisa a fazer.
+
+			Ao ponto de que a pergunta "Tens alguma coisa pra fazer?" perde o sentido
+			literal. Traduzo ela para "Tem alguma coisa que tu precisa fazer agora, antes
+			disso que eu talvez queria que tu faça?"
+			</aside>
 		</section>
 
 		<section>
