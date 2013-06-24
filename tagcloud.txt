@@ -107,6 +107,8 @@ scrum
 sdn
 sdn
 security
+security
+security
 shell
 shell
 sla
@@ -150,3 +152,8 @@ windows
 wireshark
 zabbix
 zfs
+kernel
+kernel
+ipc
+ipc
+nfs

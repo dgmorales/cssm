@@ -67,27 +67,9 @@
 		</section>
 
 		<section>
-			<h2>Um dia normal</h2>
-			<p>
-			Existe um problema. Incompreendido. Confuso. Urgente. Você não sabe como resolvê-lo. <br>
-			<br>
-			Mas <b>vai descobrir</b>.
-			</p>
-			<aside class="notes">
-				Nós estamos constantemente lidando com o desconhecido, tendo que
-				aprender novos conceitos, tecnologias, técnicas e softwares
-				rapidamente, e aplicando isso tudo logo em seguida.
-
-				Esse é o nosso maior diferencial.
-			</aside>
-		</section>
-
-		<section>
 			<section>
-				<h2>As muitas faces de um sysadmin</h2>
-				<p>
-					Mosaico de imagens ?
-				</p>
+				<h2>Quem somos?</h2>
+				<img src="images/faces2.png" width="100%" border="0" style="border:none;vertical-align:middle;" /> 
 				<aside class="notes">
 					Nível 1, 2 ou 3. Generalista ou especialista. Do trabalho operacional
 					mais simples, à depuração ou criação mais complexa. Nós estamos em
@@ -95,7 +77,26 @@
 				</aside>
 			</section>
 			<section>
+				<h2>E o que a gente faz?</h2>
 				<img src="images/sysadmin-cloud2.svg" width="100%" border="0" style="border:none;vertical-align:middle;" /> 
+				<aside class="notes">
+					A gente navega nessa nuvem.
+				</aside>
+			</section>
+			<section>
+				<h2>Um dia normal</h2>
+				<p>
+				Existe um problema. Incompreendido. Confuso. Urgente. Você não sabe como resolvê-lo. <br>
+				<br>
+				Mas <b>vai descobrir</b>.
+				</p>
+				<aside class="notes">
+					Nós estamos constantemente lidando com o desconhecido, tendo que
+					aprender novos conceitos, tecnologias, técnicas e softwares
+					rapidamente, e aplicando isso tudo logo em seguida.
+
+					Esse é o nosso maior diferencial.
+				</aside>
 			</section>
 		</section>
 
@@ -104,7 +105,23 @@
 			<section>
 				<h2>Nosso Futuro</h2>
 				<br/>
-				<p>Infrastructure as Code (ou imagem?)</p>
+				<p>Existe uma revolução em curso, e ela não pode ser parada.</p>
+				<aside class="notes">
+				</aside>
+			</section>
+			<section>
+				<blockquote cite="http://community.spiceworks.com/topic/262140-q-a-part-2-tom-limoncelli-talks-about-success-failure-and-pirates-vs-zombies">
+					&ldquo;Now that installing a computer is an API call, we’re all programmers.&rdquo;
+				</blockquote>
+				<br/>
+				<p style="text-align:right">
+					Tom Limoncelli, autor do do TPOSNA, entre <a href="http://www.everythingsysadmin.com">outros</a>.
+				</p>
+				<aside class="notes">
+					Vai continuar a existir o sysadmin não programador por
+					muito tempo, mas não faz sentido um jovem sysadmin hoje
+					não investir em aprender a programar, pelo menos o básico.
+				</aside>
 			</section>
 			<section>
 				<blockquote cite="https://blog.mozilla.org/it/2012/10/11/the-ops-benefit-of-the-cloud/">
@@ -118,19 +135,22 @@
 				</p>
 			</section>
 			<section>
-				<blockquote cite="http://community.spiceworks.com/topic/262140-q-a-part-2-tom-limoncelli-talks-about-success-failure-and-pirates-vs-zombies">
-					&ldquo;Now that installing a computer is an API call, we’re all programmers.&rdquo;
-				</blockquote>
+				<h2>Gerenciamento de configuração</h2>
 				<br/>
-				<p style="text-align:right">
-					Tom Limoncelli, autor do do TPOSNA, entre <a href="http://www.everythingsysadmin.com">outros</a>.
-				</p>
+				<p>puppet</p>
+				<p>chef</p>
+				<p>cfengine</p>
+				<p>ansible</p>
+				<p><strike>MS System Center Configuration Manager</strike></p>
 			</section>
 			<section>
 				<h2>Infrastructure as code</h2>
 				<p>Aprenda a programar. <i>Shell scripting</i> não conta :)</p>
 				<p>Aprenda a usar um sistema de gerenciamento de configuração.</p>
+				<p>Não é só a respeito de automatização.</p>
 				<aside class="notes">
+					Programar: que tal python?
+
 					Gerenciamento de configuração por enquanto está bombando
 					na nuvem e outros ambientes gigantes. No futuro vai estar
 					em todo lugar, outras ferramentas vai depender dele. Mesmo
@@ -143,75 +163,173 @@
 		<section>
 
 			<section>
-			<h2>Resolvendo problemas</h2>
+			<h2>Três pilares</h2>
 
-			<p>O primeiro passo muitas vezes é para trás.</p>
+			<p>Comunicação, monitoração e automatização.</p>
 
-			<ul>
-			<li>O usuário pede uma solução xyz.</li>
-			<li>Mas qual o problema?</li>
-			<li>O usuário diz qual é causa do problema.</li>
-			<li>Mas qual é o sintoma?</li>
-			<br/>
-			<li>Qual a extensão do sintoma?</li>
-			<li>Cuidado com o telefone sem fio</li>
-
-			</ul>
 			<aside class="notes">
-				Gente, se pelo título parece que eu vou ter alguma fórmula mágica,
-				bom ... claro que eu não.
 			</aside>
 			</section>
 
 			<section>
-			<h2>Resolvendo problemas (2)</h2>
 
-			<p>Busque a reprodução.</p>
+			<h2>Comunicação</h2>
 
-			<ul>
-				<li>Teste <b>antes</b> e depois.</li>
-				<li>Tenha consciência da qualidade do seu teste.</li>
-				<li>Atire na cabeça (causa-raiz).</li>
-			</ul>
+			Algo do limoncelli?
+
+			Sistema de tíquetes
+
+			Aprenda inglês?
+
 			<aside class="notes">
-				Não atirar na cabeça é botar um "soneca" no problema. O caso
-				mais básico: espaço em disco lotando no servidor. Pescou o
-				problema com o sistema de monitoração, achou uns logs grandes,
-				removeu, liberou espaço e tá se achando o máximo. Mas e daí? x
-				dias depois vai lotar de novo. Como evitar? (logrotate?,
-				applicação tá gerando um erro não esperado que tá aumentando o
-				log?).
 			</aside>
 			</section>
 
 			<section>
-			<h2>Documente!</h2>
+			<h2>Monitoração</h2>
 
-			<p>Não para outros. Mas para <b>você mesmo</b>, no futuro.</p>
+			<p>Não ter monitoramento é viver na Idade das Trevas da TI. E sem
+			ele não há paz.</p>
+			<ul>
+				<li>Nagios, zabbix, zenoss, centreon, tivoli whatever.</li>
+				<li>Muitos existem,	utilize um deles.</li>
+			</ul>
+
 			<aside class="notes">
-				Esqueça os outros. Documente para você. Não, você não vai
-				lembrar. Você não precisa.
+				Eu não sei se eu vou achar alguém que não usa isso aqui na
+				platéia, mas se existe, acabe com isso.
+
+				Idade média: espadas e cavalos num mundo cheio de tanques e
+				armas de fogo.
+
+				Sem monitoramento não há paz.
 			</aside>
 			</section>
 
+			<section>
+
+			<h2>Automatização</h2>
+
+			Gráfico do Limoncelli?
+
+			<aside class="notes">
+			</aside>
+			</section>
+
+			</section>
+
+
+			<section>
+				<section>
+				<h2>4 coisas sobre<br/> resolução de problemas</h2>
+				</section>
+
+				<section>
+				<h3>(1) O primeiro passo muitas vezes é para trás.</h3>
+				<br/>
+				<p>Sempre avalie a qualidade da informação recebida.</p>
+				<br/>
+
+				<ul>
+				<li>o usuário pede uma solução xyz.</li>
+				<li>Mas qual o problema?</li>
+				<li>O usuário diz qual é causa do problema.</li>
+				<li>Mas qual é o sintoma?</li>
+				<br/>
+				<li>Qual a extensão do sintoma?</li>
+
+				</ul>
+				<aside class="notes">
+				</aside>
+				</section>
+
+				<section>
+				<h3>(2) Reprodução --> solução.</h3>
+				<br/>
+				<p>Teste <b>antes</b> e depois.</p>
+				<p>E tenha consciência da qualidade do seu teste.</p>
+				<aside class="notes">
+				</aside>
+				</section>
+
+				<section>
+				<h3>(3) Atire na cabeça!</h3>
+				<br/>
+				<p>Não atirar na cabeça é como dar um "soneca" no problema.</p>
+
+				<aside class="notes">
+					O caso mais básico: espaço em disco lotando no servidor.
+					Pescou o problema com o sistema de monitoração, achou uns logs
+					grandes, removeu, liberou espaço e tá se achando o máximo. Mas
+					e daí? x dias depois vai lotar de novo. Como evitar?
+					(logrotate?, applicação tá gerando um erro não esperado que tá
+					aumentando o log?).
+				</aside>
+				</section>
+
+				<section>
+				<h3>(4) Documente!</h3>
+				<br/>
+				<p>Não para outros. Mas para <b>você mesmo</b>, no futuro.</p>
+				<aside class="notes">
+					Esqueça os outros. Documente para você. Não, você não vai
+					lembrar. Você não precisa.
+				</aside>
+				</section>
+
+		</section>
+
+		<section>
+		<h2>Gerenciando o Caos</h2>
+		<p>Zumbis?</p>
+
+		Ver limoncelli
 		</section>
 
 		<section>
 			<section>
 			<h2>Mil e uma maneiras de pedir ajuda</h2>
+			<br/>
+			<ul>
+				<li>man man (link).</li>
+				<li>Dê valor ao IRC (link).</li>
+				<br/>
+				<li>Em roteadores e switches basta saber 2 comandos:</li>
+				<ul>
+					<li>O que lista a config (ala <i>show running-config</i>).</li>
+					<li>O que edita a config (ala <i>config terminal</i>).</li>
+				</ul>
+				<br/>
+				<li>O inferno na terra: sites de fabricantes de HW.</li>
+				<ul>
+					<li>Procure <i>Support</i>, jamais <i>Products</i>.</li>
+					<li>Consiga acesso a área restrita, <b>antes</b> de
+					precisar.</li>
+				</ul>
+			</ul>
+			</section>
+
+			<section>
+			<h2>Uma lista de sites para conhecer</h2>
+			icones ...
 			</section>
 		</section>
 
 		<section>
 			<section>
 			<h2>Invista nas ferramentas do dia-a-dia</h2>
+			<br/>
+			<p>Afie o seu machado.</p>
+			<aside class="notes">
+				Contar a história dos dois lenhadores. Link?
+			</aside>
 			<aside class="notes">
 				Muita gente usa o vi todos os dias, por anos, sem aprender nem
 				10% do ele faz. Ou o shell, ou ...
 			</aside>
 			</section>
 			<section>
-				<h2>Aprenda inglês</h2>
+				<h3>Aprenda inglês</h3>
 				<p>A língua nativa do mundo da TI é esta. Não seja um
 				estrangeiro nesse mundo.</p>
 				<aside class="notes">
@@ -219,7 +337,7 @@
 				</aside>
 			</section>
 			<section>
-				<h2> O seu teclado</h2>
+				<h3>O seu teclado</h3>
 				<p><a href="http://www.typeonline.co.uk/lesson1.html">Aprenda</a> a
 				digitar direito (<i>touch typing</i>). </p>
 				<aside class="notes">
@@ -254,7 +372,7 @@
 				</aside>
 			</section>
 			<section>
-				<h2>Shell</h2>
+				<h3>O seu shell</h3>
 				<br/>
 				<p>	Sim, o seu velho amigo bash tem 
 					<a
@@ -273,7 +391,7 @@
 				</aside>
 			</section>
 			<section>
-				<h2>O shell não para no /bin/sh</h2>
+				<h3>O shell não para no /bin/sh</h3>
 				<p>O poder do shell está na família de comandos unix.</p>
 				<ul>
 					<li>find, xargs, grep, sed, awk ...</li>
@@ -289,7 +407,7 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 				</aside>
 			</section>
 			<section>
-				<h2>O SSH faz isso?</h2>
+				<h3>O SSH faz isso?</h3>
 				<br/>
 				<ul>
 					<li><i>Port forwarding</i> com -L e -R (reverso!).</li>
@@ -314,7 +432,7 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 				</aside>
 			</section>
 			<section>
-			<h2>Versionamento</h2>
+			<h3>Use controle de versão</h3>
 			<br/>
 			<p>Chega de <i>.old</i>, <i>.bak</i>, <i>.bak-20130201</i>, ... </p>
 			<br/>
@@ -336,11 +454,6 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 		<section>
 			<section>
 				<h2>Livros, blogs, podcasts</h2>
-				<br/>
-				<p>Afie o seu machado</p>
-				<aside class="notes">
-					Contar a história dos dois lenhadores. Link?
-				</aside>
 			</section>
 
 			<section>
