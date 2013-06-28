@@ -37,10 +37,10 @@
 	<div class="slides">
 		<section>
 		<h1>Como ser um <br> sysadmin <br> <small>(melhor)</small></h1>
-			<h3>O caos é uma doença, nós somos a cura</h3>
+			<!-- <h3>O caos é uma doença, nós somos a cura</h3> -->
+			<p>Diego Morales</p>
 			<p>
 				<small>
-				<a href="http://dgmorales.info" style="vertical-align:middle;">Diego Morales</a> 
 				&nbsp;
 				<img src="images/mail3.png" border="0" style="border:none;vertical-align:middle;" />
 				<a href="mailto:morales@propus.com.br" style="vertical-align:middle;">morales@propus.com.br</a> 
@@ -53,14 +53,17 @@
 
 		<section>
 			<h2>O que vem por aí</h2>
+			<br/>
 			<ol>
-				<li>Um dia normal</li>
-				<li>Resolvendo problemas</li>
-				<li>Afie seu machado</li>
-				<li>Contato</li>
-				<li>blah</li>
-				<li>blah</li>
-				<li>blah</li>
+				<li>Quem somos</li>
+				<li>Nosso futuro</li>
+				<li>Três pilares</li>
+				<li>Quatro coisas sobre resolução de problemas</li>
+				<li>Gerenciando o caos</li>
+				<li>Mil e uma maneiras de pedir ajuda</li>
+				<li>Invista nas ferramentas do dia-a-dia</li>
+				<li>Livros, blogs e podcasts</li>
+				<li>Reatividade é o inimigo</li>
 			</ol>
 			<aside class="notes">
 				Ser rápido. Não falar item por item, pela amor de deus.
@@ -85,14 +88,16 @@
 				</aside>
 			</section>
 			<section>
-				<h2>E o que a gente faz?</h2>
+				<h3>E o que a gente faz?</h3>
+				<br/>
 				<img src="images/sysadmin-cloud2.svg" width="100%" border="0" style="border:none;vertical-align:middle;" /> 
 				<aside class="notes">
 					A gente navega nessa nuvem.
 				</aside>
 			</section>
 			<section>
-				<h2>Um dia normal</h2>
+				<h3>Um dia normal</h3>
+				<br/>
 				<p>
 				Existe um problema. Incompreendido. Confuso. Urgente. Você não sabe como resolvê-lo. <br>
 				<br>
@@ -143,16 +148,20 @@
 				</p>
 			</section>
 			<section>
-				<h2>Gerenciamento de configuração</h2>
+				<h3>Gerenciamento de configuração</h3>
 				<br/>
-				<p>puppet</p>
-				<p>chef</p>
-				<p>cfengine</p>
-				<p>ansible</p>
-				<p><strike>MS System Center Configuration Manager</strike></p>
+				<a href="http://www.puppetlabs.com/"><img src="images/puppet-labs.png"/ width="240" style="border:0;"></a>
+				&nbsp; &nbsp;
+				<a href="http://www.opscode.com/chef"><img src="images/logo-chef.png" style="border:0;"/></a>
+				&nbsp; &nbsp;
+				<a href="http://www.cfengine.com"><img src="images/logo-cfengine.png" style="border:0;"/></a>
+				<br/>
+				<br/>
+				<p>E mais: <a href="">ansible</a>, <a href="">bcfg2</a>, <a href="">salt</a>,<br/>
+				<a href=""><strike>MS System Center Configuration Manager</strike></a>.</p>
 			</section>
 			<section>
-				<h2>Infrastructure as code</h2>
+				<h3>Infrastructure as code</h3>
 				<p>Aprenda a programar. <i>Shell scripting</i> não conta :)</p>
 				<p>Aprenda a usar um sistema de gerenciamento de configuração.</p>
 				<p>Não é só a respeito de automatização.</p>
@@ -181,7 +190,7 @@
 
 			<section>
 
-			<h2>Comunicação</h2>
+			<h3>Comunicação</h3>
 
 			Algo do limoncelli?
 
@@ -194,7 +203,7 @@
 			</section>
 
 			<section>
-			<h2>Monitoração</h2>
+			<h3>Monitoração</h3>
 
 			<p>Não ter monitoramento é viver na Idade das Trevas da TI. Sem
 			ele não há paz.</p>
@@ -216,7 +225,7 @@
 
 			<section>
 
-			<h2>Automatização</h2>
+			<h3>Automatização</h3>
 
 			Gráfico do Limoncelli?
 
@@ -549,7 +558,7 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 			</section>
 
 			<section>
-				<h2>Livros</h2>
+				<h3>Livros</h3>
 				<br/>
 				<ul>
 					<li><a href="http://www.amazon.com/Practice-System-Network-Administration-ebook/dp/B004JLMUJ0/ref=sr_1_1_bnp_1_kin?ie=UTF8&qid=1371948468&sr=8-1&keywords=the+practice+of+network+and+system+administration">The Practice of System and Network Administration</a></li>
@@ -560,7 +569,7 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 			</section>
 
 			<section>
-				<h2>Blogs</h2>
+				<h3>Blogs</h3>
 				<ul>
 					<li><a href="http://www.everythingsysadmin.com">Everything Sysadmin</a></li>
 					<li><a href="http://puppetlabs.com/blog">Puppetlabs Blog</a></li>
@@ -573,7 +582,7 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 			</section>
 
 			<section>
-				<h2>Podcasts</h2>
+				<h3>Podcasts</h3>
 				<br/>
 				<ul>
 					<li><a href="http://packetpushers.net">Packet Pushers</a></li>
