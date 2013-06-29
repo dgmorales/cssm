@@ -47,179 +47,257 @@
 				&nbsp;
 				<img src="images/twitter-bird-white-on-blue.png" height="24" width="24" border="0" style="border:none;vertical-align:middle;" /> 
 				<a href="http://twitter.com/dgmorales" style="vertical-align:middle;">@dgmorales</a> 
+
 				</small>
 			</p>
+			<aside class="notes">
+				Boa tarde pessoal
+
+				Meu nome é Diego Morales, eu trabalho como sysadmin já fazem 14
+				anos. Já trabalhei em universidade, em órgãos públicos, e já
+				há alguns ano na Propus, uma empresa que presta serviços de
+				infraestrutura em TI. 
+
+				Principalmente nesses anos de Propus eu venho tendo várias
+				experiências ajudando e orientando sysadmins mais jovens e/ou
+				inexperientes do que eu.  E essa palestra, Como ser um
+				Sysadmin melhor, é uma maneira de compartilhar as minhas dicas
+				com uma audiência maior.
+
+				A palestra já tá disponível na Internet, nesse endereço
+				(falar), e vocês podem inclusive ir acompanhando ela aí nos
+				laptops de vocês, se a rede deixar.
+			</aside>
 		</section>
 
 		<section>
 			<h2>O que vem por aí</h2>
 			<br/>
 			<ol>
-				<li>Quem somos</li>
-				<li>Nosso futuro</li>
-				<li>Três pilares</li>
-				<li>Quatro coisas sobre resolução de problemas</li>
+				<li>O que a gente faz</li>
 				<li>Gerenciando o caos</li>
+				<li>Quatro coisas sobre resolução de problemas</li>
 				<li>Mil e uma maneiras de pedir ajuda</li>
 				<li>Invista nas ferramentas do dia-a-dia</li>
 				<li>Livros, blogs e podcasts</li>
+				<li>Nosso futuro</li>
 				<li>Reatividade é o inimigo</li>
 			</ol>
+			<br/>
+			<br/>
+			<p>Acompanhe: <a href="http://dgmorales.github.io/cssm/">http://dgmorales.github.io/cssm/</a></>
 			<aside class="notes">
-				Ser rápido. Não falar item por item, pela amor de deus.
+				Bom, vocês tem aí no slide um overview da palestra, só pra dar
+				uma noção do que vem pela frente.
 
+				Na minha experiência como ouvinte de palestras no FISL e
+				outros lugares, as coisas mais interessantes que eu levo para
+				fora da palestra são referências. Coisas que eu anoto para
+				olhar com mais calma depois. Um software que eu não
+				conhecia, uma técnica, um blog ou site, e por aí vai.
 
-				* falar que é muito baseada em referências, minha experiência
-				em fisls
-				* e que isso casa com o trabalho de sysadmin, nao tem mágica
-				que eu possa transmitir pra vocês em uma palestra, tem hard work
-				* e vou mostrar pra vocês pq ...
+				Eu fiz essa palestra muito influenciado por essa experiência,
+				e por isso eu enchi ela de referências. Coisas que eu só vou
+				poder falar um pouquinho aqui, mas que tem um link aí nos
+				slides para se aprofundar mais. O link tá aí de novo.
+
+				E isso acho casa bem com o tema aqui. Como é que eu vou, em
+				meros 45 minutos, ajudar alguém aqui a ser um sysadmin
+				melhor?. Não tem receita mágica nessa profissão, nem bala de
+				prata. O que tem é estudo, treino, experiência, calma. Vou vir
+				aqui e falar de tecnologia pra vocês? 
+				
+				Qual delas? 
+				
 			</aside>
 		</section>
 
 		<section>
+			<section>
+				<h2>O que a gente faz</h2>
+				<br/>
+				<img src="images/sysadmin-cloud2.svg" width="100%" border="0" style="border:none;vertical-align:middle;" /> 
+				<aside class="notes">
+
+					Servidores, Windows, Linux, Rede, Storage, backup, um
+					sysadmin navega nessa nuvem aí de cima. Um sysadmin que tende mais
+					pro lado generalista, como eu por exemplo, circula pela nuvem
+					inteira. Um mais especialista vai se aprofundar e dominar melhor um
+					pedaço dela.
+
+					(opcional?)
+					Quando um usuário em uma empresa recebe um computador para
+					trabalhar, um sysadmin instalou aquela máquina, ou que pelos menos
+					preparou a imagem da qual ela foi criada. Quando ele loga na rede,
+					tá usando o servidor AD ou LDAP da empresa, está passando pelos
+					switches e roteadores. Ao navegar na Internet, está passando pelo
+					servidor proxy, e chegando nos servidores web que servem as
+					aplicações ou informações que ele precisa. Tudo isso é mantido por
+					sysadmins. Por trás das aplicações, tem banco de dados, tem storage,
+					tem balanceamento de carga, e tudo isso tem a mão de sysadmin no
+					meio.
+
+					Nós sysadmins mantemos a TI de pé. Nos bastidores, onde quase
+					ninguém enxerga a gente. A não ser quando dá problema. 
+
+					Mas tudo bem, sysadmin é que nem árbitro de futebol, se o público
+					não nota que ele existe, é porque ele tá fazendo um bom trabalho.
+				</aside>
+			</section>
+
+			<!--
 			<section>
 				<h2>Quem somos?</h2>
 				<img src="images/faces2.png" width="100%" border="0" style="border:none;vertical-align:middle;" /> 
 				<aside class="notes">
-					Nível 1, 2 ou 3. Generalista ou especialista. Do trabalho operacional
-					mais simples, à depuração ou criação mais complexa. Nós estamos em
-					todas.
+
+					E tem muitos "sabores" de sysadmins. Do trabalho operacional mais
+					simples, à depuração ou criação mais complexa. Nós estamos em todas.
+				
+					Aquele operador do nível 1 que
+					tá lá lidando direto com o usuário, aquele que 
+					E fora essa divisão entre generalista e especialista, 
+					Nível 1, 2 ou 3. Generalista ou especialista. 
+					
 				</aside>
-			</section>
-			<section>
-				<h3>E o que a gente faz?</h3>
-				<br/>
-				<img src="images/sysadmin-cloud2.svg" width="100%" border="0" style="border:none;vertical-align:middle;" /> 
-				<aside class="notes">
-					A gente navega nessa nuvem.
-				</aside>
-			</section>
+				</section>
+			-->
 			<section>
 				<h3>Um dia normal</h3>
 				<br/>
 				<p>
-				Existe um problema. Incompreendido. Confuso. Urgente. Você não sabe como resolvê-lo. <br>
+				Existe um problema ou necessidade. Incompreendido. Confuso. Urgente. Você não sabe como resolvê-lo. <br>
 				<br>
 				Mas <b>vai descobrir</b>.
 				</p>
 				<aside class="notes">
+					E tantas e tantas vezes, esses problemas chegam para nós assim: tá
+					tudo parado, não imprime, o sistema tá lento. É tudo confuso, e é
+					urgente, é quase sempre urgente. Ninguém sabe direito o que tá
+					acontecendo, ou como resolver, e nem nós. 
+
+					Mas é a gente que vai descobrir, e vai resolver. 
+					
+					E é o nosso dia-a-dia. Esse é o nosso	diferencial.
+
 					Nós estamos constantemente lidando com o desconhecido, tendo que
 					aprender novos conceitos, tecnologias, técnicas e softwares
-					rapidamente, e aplicando isso tudo logo em seguida.
+					rapidamente, e aplicando isso tudo logo em seguida. Até porque a
+					tecnologia evolui muito rápido e tudo está em constante mudança.
 
-					Esse é o nosso maior diferencial.
-				</aside>
-			</section>
-		</section>
-
-
-		<section>
-			<section>
-				<h2>Nosso Futuro</h2>
-				<br/>
-				<p>Existe uma revolução em curso, e ela não pode ser parada.</p>
-				<aside class="notes">
-				</aside>
-			</section>
-			<section>
-				<blockquote cite="http://community.spiceworks.com/topic/262140-q-a-part-2-tom-limoncelli-talks-about-success-failure-and-pirates-vs-zombies">
-					&ldquo;Now that installing a computer is an API call, we’re all programmers.&rdquo;
-				</blockquote>
-				<br/>
-				<p style="text-align:right">
-					Tom Limoncelli, autor do do TPOSNA, entre <a href="http://www.everythingsysadmin.com">outros</a>.
-				</p>
-				<aside class="notes">
-					Vai continuar a existir o sysadmin não programador por
-					muito tempo, mas não faz sentido um jovem sysadmin hoje
-					não investir em aprender a programar, pelo menos o básico.
-				</aside>
-			</section>
-			<section>
-				<blockquote cite="https://blog.mozilla.org/it/2012/10/11/the-ops-benefit-of-the-cloud/">
-					&ldquo;The benefit of the cloud from an ops side is that it forces us
-					to do what we should be doing anyway – running installation and configuration
-					management.&rdquo; 
-				</blockquote>
-				<br/>
-				<p style="text-align:right">
-					Sheeri K. Cabral, no <a href="https://blog.mozilla.org/">blog</a> da Mozilla.
-				</p>
-			</section>
-			<section>
-				<h3>Gerenciamento de configuração</h3>
-				<br/>
-				<a href="http://www.puppetlabs.com/"><img src="images/puppet-labs.png"/ width="240" style="border:0;"></a>
-				&nbsp; &nbsp;
-				<a href="http://www.opscode.com/chef"><img src="images/logo-chef.png" style="border:0;"/></a>
-				&nbsp; &nbsp;
-				<a href="http://www.cfengine.com"><img src="images/logo-cfengine.png" style="border:0;"/></a>
-				<br/>
-				<br/>
-				<p>E mais: <a href="">ansible</a>, <a href="">bcfg2</a>, <a href="">salt</a>,<br/>
-				<a href=""><strike>MS System Center Configuration Manager</strike></a>.</p>
-			</section>
-			<section>
-				<h3>Infrastructure as code</h3>
-				<p>Aprenda a programar. <i>Shell scripting</i> não conta :)</p>
-				<p>Aprenda a usar um sistema de gerenciamento de configuração.</p>
-				<p>Não é só a respeito de automatização.</p>
-				<aside class="notes">
-					Programar: que tal python?
-
-					Gerenciamento de configuração por enquanto está bombando
-					na nuvem e outros ambientes gigantes. No futuro vai estar
-					em todo lugar, outras ferramentas vai depender dele. Mesmo
-					quem administrar um servidor apenas poderá acabar tendo
-					contato com CMs.	
 				</aside>
 			</section>
 		</section>
 
 		<section>
-
 			<section>
-			<h2>Três pilares</h2>
+			<h2>Gerenciando o Caos</h2>
 
-			<p>Comunicação, monitoração e automatização.</p>
+			<p>O caos é uma doença. Nós somos a cura.</p>
+			<br/>
+			<img src="images/OrderChaosSignPost_©depositphotos.com_stuartmiles_8052674_wd.jpg" width="40%" />
 
 			<aside class="notes">
+			 Aquela nuvem enorme de conhecimento, problemas malucos caindo nosso
+			 colo, a gente sempre tendo que se dividir entre dar suporte aos
+			 usuários, apagar incêndios e tocar projetos maiores que são
+			 necessários...
+
+			 É o caos. Ele é o nosso arqui-inimigo. Eu perco muito mais lutas pra
+			 ele do que eu gostaria, mas aqui vão algumas dicas.
 			</aside>
+
 			</section>
 
 			<section>
-
-			<h3>Comunicação</h3>
-
-			Algo do limoncelli?
-
-			Sistema de tíquetes
-
-			Aprenda inglês?
-
-			<aside class="notes">
-			</aside>
+				<h3>Gerenciamento de tempo</h3>
+				<ul>
+					<li>Livro <a href="http://www.tomontime.com/"></a></li>
+					<li><a href="http://www.tomontime.com/">http://www.tomontime.com/</a></li>
+				</ul>
 			</section>
 
 			<section>
-			<h3>Monitoração</h3>
+				<h3>Drops Time Management</h3>
 
+				<ul>
+					<li>Preserve o seu cérebro: não tente lembrar das coisas,
+					anote, agende um alarme, e esqueça.</li>
+					<li>Rotinas: pense uma vez, faça várias.</li>
+					<li>Escudos de interrupções.</li>
+					<li>Defina objetivos profissionais.</li>
+				</ul>
+				<aside class="notes">
+
+				Existem muitas decisões pequenas que temos que fazer repetidamente. Ficar
+				pensando toda vez o que fazer a cada caso é mais ineficiente que
+				assumir um padrão toda vez, mesmo que o padrão não seja o mais
+				eficiente toda vez.
+
+				Exemplos de rotinas: 
+
+				* Anoto na agenda ou não anoto? Anota!
+				* Boto um alarme ou não boto? Põe o alarme!
+				* Que horas é a nossa reunião hoje, aquela que a gente faz toda
+				semana? Marca sempre no mesmo horário e não perde tempo combinando!
+				</aside>
+			</section>
+
+			<section>
+			<h3>3 coisas fundamentais</h3>
+
+			<p>Sistema de tíquetes, Monitoramento, automatização.</p>
+
+			tíquetes ...
+
+			</section>
+
+			<section>
+			<h3>Monitoramento</h3>
+			<br/>
 			<p>Não ter monitoramento é viver na Idade das Trevas da TI. Sem
 			ele não há paz.</p>
+			<br/>
 			<ul>
-				<li>Nagios, zabbix, zenoss, centreon, tivoli whatever.</li>
+				<li><a href="http://www.nagios.org">Nagios</a>, 
+				<a href="http://www.zabbix.com">Zabbix</a>, 
+				<a href="http://www.zenoss.com/">Zenoss</a>, 
+				<a href="http://www.centreon.com">Centreon</a>, ...
 				<li>Muitos existem,	utilize um deles.</li>
 			</ul>
 
 			<aside class="notes">
-				Eu não sei se eu vou achar alguém que não usa isso aqui na
-				platéia, mas se existe, acabe com isso.
+				Nagios, Centreon, Zabbix, Zenoss, e outros tantos livres e
+				proprietários. 
+				
+				Eu já trabalhei em lugares grandes que não tinham um sistema de
+				monitoramento desses instalado. Faz bastante tempo isso e eles
+				certamente já resolveram isso, mas eu fico pensando, como a gente
+				deixava isso? 
 
-				Idade média: espadas e cavalos num mundo cheio de tanques e
-				armas de fogo.
+				Tu não tem monitoração... daí rola um rumor que uma aplicação x tá com
+				problema. Já bate um medo. Será? Por desencargo, tu para o que estás
+				fazendo, vai lá, acessa a aplicação, ou então entra no servidor,
+				confere se o espaço em disco não acabou, se o daemon tá rodando, se tá
+				conectando na porta ... cara, não dá, isso não é VIDA.
 
-				Sem monitoramento não há paz.
+				Eu não sei se isso acontece em algum lugar hoje em dia, mas se
+				acontece, tem que parar tudo, esquecer o resto, deixar o usuários
+				esperneando e botar um monitoramento no ar.
+
+				Monitoração é uma fonte de paz, quanto melhor ela for, mais paz ela
+				gera e entrega pra ti. 
+				
+				Tu fica de olho nos alarmes que ela gera e não dá bola pra qualquer rumor. 
+				
+				Tu te recupera de algum incidente maluco, teve que religar todo
+				datacenter, sei lá. Tu olha para a monitoração e sabe que tá tudo bem,
+				ou pesca o que tá errado.
+
+				E não interessa se o ambiente é pequeno, não interessa nem se tu é um
+				estagiário ou bolsista e gerencia um servidor só. Se é assim, tu deve
+				conseguir arranjar tempo para instalar um sistema desses e já ir se
+				acostumando com eles.
 			</aside>
 			</section>
 
@@ -231,129 +309,119 @@
 
 			http://xkcd.org/1205/
 			<aside class="notes">
+
+			Eu sou um fanático por um automatização. Automatização é um termo bem
+			amplo. A gente acabou de falar em monitoramento, por exemplo, e ele é um
+			tipo de automatização. Um que remove a necessidade de eu ficar checando
+			a saúde dos serviços manualmente.
+
+			Automatização poder ser uma coisa simples, uma tarefa no cron, um
+			script em bash, um script maior, um programa. Pode ser até usar um
+			protocolo dinâmico de roteamento, como OSPF, em vez de ficar gerenciando
+			rotas estáticas. Talvez na sua forma mais elaborada, um sistema de
+			gerência de configuração, puppet, chef, cfengine, eu vou falar mais
+			deles depois.
+
+			A gente tem cada vez mais demandas, e na minha visão investir em
+			automatização, e todas essas formas que eu falei, é o único de jeito de
+			conseguir suprir essas demandas com qualidade.
+
+			Uma dúvida clássica é sobre quando automatizar. O livro do Tom
+			Limoncelli tem um a sugestão interessante: ...
+
+
 			</aside>
 			</section>
 
-			</section>
 
+		</section>
+
+		<section>
+			<section>
+			<h2>4 coisas sobre<br/> resolução de problemas</h2>
+			<aside class="notes">
+				Eu ia chamar esta parte de "Como resolver problemas?", mas resolvi dar
+				um título menos ambicioso para ela, e vou então mencionar 4 coisas.
+			</aside>
+			</section>
 
 			<section>
-				<section>
-				<h2>4 coisas sobre<br/> resolução de problemas</h2>
-				</section>
+			<h3>(1) O primeiro passo é para trás</h3>
+			<br/>
+			<p>Sempre avalie a qualidade da informação recebida.</p>
+			<br/>
 
-				<section>
-				<h3>(1) O primeiro passo é para trás</h3>
-				<br/>
-				<p>Sempre avalie a qualidade da informação recebida.</p>
-				<br/>
-
+			<ul>
+			<li>o usuário pede uma solução xyz.</li>
 				<ul>
-				<li>o usuário pede uma solução xyz.</li>
-					<ul>
-					<li>Mas qual o problema?</li>
-					</ul>
-				<li>O usuário diz qual é causa do problema.</li>
-					<ul>
-					<li>Mas qual é o sintoma? E a extensão dele?</li>
-					</ul>
+				<li>Mas qual o problema?</li>
 				</ul>
-				<aside class="notes">
-					Sobre a qualidade: cuidado com o telefone sem fio.
-				</aside>
-				</section>
-
-				<section>
-				<h3>(2) Reprodução --> solução</h3>
-				<br/>
-				<p>Teste <b>antes</b> e depois.</p>
-				<p>E tenha consciência da qualidade do seu teste.</p>
-				<br/> 
-				<p>Falando em testes, teste <b>uma coisa de cada vez!</b></p>
-				<aside class="notes">
-				</aside>
-				</section>
-
-				<section>
-				<h3>(3) Atire na cabeça</h3>
-				<br/>
-				<p>Não atirar na cabeça é como dar um "soneca" no problema.</p>
-
-				<aside class="notes">
-					O caso mais básico: espaço em disco lotando no servidor.
-					Pescou o problema com o sistema de monitoração, achou uns logs
-					grandes, removeu, liberou espaço e tá se achando o máximo. Mas
-					e daí? x dias depois vai lotar de novo. Como evitar?
-					(logrotate?, applicação tá gerando um erro não esperado que tá
-					aumentando o log?).
-				</aside>
-				</section>
-
-				<section>
-				<h3>(4) Documente</h3>
-				<br/>
-				<p>Não para outros. Mas para <b>você mesmo</b>, no futuro.</p>
-				<aside class="notes">
-					Esqueça os outros. Documente para você. Não, você não vai
-					lembrar. Você não precisa. Não, não vai. Tô dizendo, não
-					vai lembrar.
-				</aside>
-				</section>
-
-		</section>
-
-		<section>
-		<section>
-		<h2>Gerenciando o Caos</h2>
-		<br/>
-		
-		<img src="images/OrderChaosSignPost_©depositphotos.com_stuartmiles_8052674_wd.jpg" width="50%" />
-
-		</section>
-
-		<section>
-			<h3>Time Management for SysAdmins</h3>
-			<ul>
-				<li>Livro <a href="http://www.tomontime.com/"></a></li>
-				<li><a href="http://www.tomontime.com/">http://www.tomontime.com/</a></li>
-			</ul>
-		</section>
-
-		<section>
-			<h3>Drops Time Management</h3>
-
-			<ul>
-				<li>Preserve o seu cérebro: não tente lembrar das coisas,
-				anote, agende um alarme, e esqueça.</li>
-				<li>Rotinas: pense uma vez, faça várias.</li>
-				<li>Escudos de interrupções.</li>
-				<li>Defina objetivos profissionais.</li>
+			<li>O usuário diz qual é causa do problema.</li>
+				<ul>
+				<li>Mas qual é o sintoma? E a extensão dele?</li>
+				</ul>
 			</ul>
 			<aside class="notes">
-
-			Existem muitas decisões pequenas que temos que fazer repetidamente. Ficar
-			pensando toda vez o que fazer a cada caso é mais ineficiente que
-			assumir um padrão toda vez, mesmo que o padrão não seja o mais
-			eficiente toda vez.
-
-			Exemplos de rotinas: 
-
-			* Anoto na agenda ou não anoto? Anota!
-			* Boto um alarme ou não boto? Bota!
-			* Faço um backup do arquivo antes ou não faço? Faz!
-			* Que horas é a reunião semanal? Marca sempre no mesmo horário!
+				Sobre a qualidade: cuidado com o telefone sem fio.
 			</aside>
+			</section>
+
+			<section>
+			<h3>(2) Reprodução --> solução</h3>
+			<br/>
+			<p>Teste <b>antes</b> e depois.</p>
+			<p>E tenha consciência da qualidade do seu teste.</p>
+			<br/> 
+			<p>Falando em testes, teste <b>uma coisa de cada vez!</b></p>
+			<aside class="notes">
+			</aside>
+			</section>
+
+			<section>
+			<h3>(3) Atire na cabeça</h3>
+			<br/>
+			<p>Não atirar na cabeça é como dar um "soneca" no problema.</p>
+
+			<aside class="notes">
+				O caso mais básico: espaço em disco lotando no servidor.
+				Pescou o problema com o sistema de monitoração, achou uns logs
+				grandes, removeu, liberou espaço e tá se achando o máximo. Mas
+				e daí? x dias depois vai lotar de novo. Como evitar?
+				(logrotate?, applicação tá gerando um erro não esperado que tá
+				aumentando o log?).
+			</aside>
+			</section>
+
+			<section>
+			<h3>(4) Documente</h3>
+			<br/>
+			<p>Não para outros. Mas para <b>você mesmo</b>, no futuro.</p>
+			<br/>
+			<p>Wikis são a coisa mais prática.</p>
+			<aside class="notes">
+				Esqueça os outros. Documente para você. Não, você não vai
+				lembrar. Você não precisa. Não, não vai. Tô dizendo, não
+				vai lembrar.
+
+				Eu não sei se alguém usa outra coisa hoje em dia, mas wikis são a
+				coisa mais prática.
+			</aside>
+			</section>
+
 		</section>
-		</section>
+
 
 		<section>
 			<section>
 			<h2>Mil e uma maneiras de pedir ajuda</h2>
 			<br/>
+			<p>Sim, não é <b>só</b> o Google</p>
+			</section>
+			<section>
+			<p><i>--help, -h, :help, /?, ?, tab, ...</i></p>
+			<br/>
 			<ul>
 				<li>man man (link).</li>
-				<li>Dê valor ao IRC (link).</li>
-				<br/>
 				<li>Em roteadores e switches basta saber 2 comandos:</li>
 				<ul>
 					<li>O que lista a config (ala <i>show running-config</i>).</li>
@@ -366,6 +434,8 @@
 					<li>Consiga acesso a área restrita, <b>antes</b> de
 					precisar.</li>
 				</ul>
+				<br/>
+				<li>Dê valor ao IRC (link).</li>
 			</ul>
 			</section>
 
@@ -486,7 +556,7 @@
 				<br/>
 				<ul>
 					<li>Mas se é pra lembrar de uma coisa só, lembre do Ctrl-R.</li>
-					<li>Mas, a coisa mais importante do shell é o |, por que ...</li>
+					<li>Mas, a coisa mais importante do shell é o |, porque ...</li>
 				</ul>
 				<aside class="notes">
 				<ul>
@@ -501,7 +571,6 @@
 					<li>find, xargs, grep, sed, awk ...</li>
 					<li>... cut, sort, tr, wc e outros do <a
 						href="http://www.catonmat.net/download/gnu-coreutils-cheat-sheet.png">coreutils</a>.</li>
-					<li>A coisa mais importante do shell é o | (pipe)</li>
 				</ul>
 				<br/>
 				<pre><code>
@@ -580,6 +649,7 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 					<li><a href="http://highscalability.com">Highscalability</a></li>
 					<li>Todo final de ano: <a href="http://sysadvent.blogspot.com.br">Sysadvent</a></li>
 					<li><a href="http://lwn.net">LWN</a> | <a href="http://slashdot.org">Slashdot</a></li>
+					<li>Jabá: <a href="http://doauto.wordpress.com">Do, Automate, Repeat</a>
 				</ul>
 				<br/>
 			</section>
@@ -615,6 +685,69 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 					<li>ACM?</li>
 					<li>LinuxMag?</li>
 				</ul>
+			</section>
+		</section>
+
+		<section>
+			<section>
+				<h2>Nosso Futuro</h2>
+				<br/>
+				<p>Existe uma revolução em curso, e ela não pode ser parada.</p>
+				<aside class="notes">
+				</aside>
+			</section>
+			<section>
+				<blockquote cite="http://community.spiceworks.com/topic/262140-q-a-part-2-tom-limoncelli-talks-about-success-failure-and-pirates-vs-zombies">
+					&ldquo;Now that installing a computer is an API call, we’re all programmers.&rdquo;
+				</blockquote>
+				<br/>
+				<p style="text-align:right">
+					Tom Limoncelli, autor do do TPOSNA, entre <a href="http://www.everythingsysadmin.com">outros</a>.
+				</p>
+				<aside class="notes">
+					Vai continuar a existir o sysadmin não programador por
+					muito tempo, mas não faz sentido um jovem sysadmin hoje
+					não investir em aprender a programar, pelo menos o básico.
+				</aside>
+			</section>
+			<section>
+				<blockquote cite="https://blog.mozilla.org/it/2012/10/11/the-ops-benefit-of-the-cloud/">
+					&ldquo;The benefit of the cloud from an ops side is that it forces us
+					to do what we should be doing anyway – running installation and configuration
+					management.&rdquo; 
+				</blockquote>
+				<br/>
+				<p style="text-align:right">
+					Sheeri K. Cabral, no <a href="https://blog.mozilla.org/">blog</a> da Mozilla.
+				</p>
+			</section>
+			<section>
+				<h3>Gerenciamento de configuração</h3>
+				<br/>
+				<a href="http://www.puppetlabs.com/"><img src="images/puppet-labs.png"/ width="240" style="border:0;"></a>
+				&nbsp; &nbsp;
+				<a href="http://www.opscode.com/chef"><img src="images/logo-chef.png" style="border:0;"/></a>
+				&nbsp; &nbsp;
+				<a href="http://www.cfengine.com"><img src="images/logo-cfengine.png" style="border:0;"/></a>
+				<br/>
+				<br/>
+				<p>E mais: <a href="">ansible</a>, <a href="">bcfg2</a>, <a href="">salt</a>,<br/>
+				<a href=""><strike>MS System Center Configuration Manager</strike></a>.</p>
+			</section>
+			<section>
+				<h3>Infrastructure as code</h3>
+				<p>Aprenda a programar. <i>Shell scripting</i> não conta :)</p>
+				<p>Aprenda a usar um sistema de gerenciamento de configuração.</p>
+				<p>Não é só a respeito de automatização.</p>
+				<aside class="notes">
+					Programar: que tal python?
+
+					Gerenciamento de configuração por enquanto está bombando
+					na nuvem e outros ambientes gigantes. No futuro vai estar
+					em todo lugar, outras ferramentas vai depender dele. Mesmo
+					quem administrar um servidor apenas poderá acabar tendo
+					contato com CMs.	
+				</aside>
 			</section>
 		</section>
 
@@ -662,13 +795,14 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 			</small>
 			</p>
 			<br/>
+			<p>Slides: &nbsp; <a href="http://dgmorales.github.io/cssm/">http://dgmorales.github.io/cssm/</a></p>
 			<p>
-			Blog: <i>Do, Automate, Repeat</i> <a
+			Blog: <i>Do, Automate, Repeat</i> &nbsp; <a
 				href="http://doauto.wordpress.com">http://doauto.wordpress.com</a>
 			</p>
 			<p>
-			Propus <a
-				href="http://www.propus.com.br">http://www.propus.com.br</a>
+			Mande o seu CV: &nbsp; <a
+				href="http://www.propus.com.br/work">http://www.propus.com.br/work</a>
 			</p>
 		</section>
 
