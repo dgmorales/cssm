@@ -421,8 +421,8 @@
 			<p><i>--help, -h, :help, /?, ?, tab, ...</i></p>
 			<br/>
 			<ul>
-				<li>man man (link).</li>
-				<li>Em roteadores e switches basta saber 2 comandos:</li>
+					<li>man <a href="http://linux.die.net/man/1/man">man</a>.</li>
+				<li>Em roteadores e switches: descubra 2 comandos</li>
 				<ul>
 					<li>O que lista a config (ala <i>show running-config</i>).</li>
 					<li>O que edita a config (ala <i>config terminal</i>).</li>
@@ -435,7 +435,7 @@
 					precisar.</li>
 				</ul>
 				<br/>
-				<li>Dê valor ao IRC (link).</li>
+				<li>Dê valor ao <a href="http://www.wikihow.com/Get-Started-with-IRC-%28Internet-Relay-Chat%29">IRC</a>.</li>
 			</ul>
 			</section>
 
@@ -500,6 +500,8 @@
 			<aside class="notes">
 				Muita gente usa o vi todos os dias, por anos, sem aprender nem
 				10% do ele faz. Ou o shell, ou ...
+				Tem muitos links aqui, e cada um foi escolhido com cuidado. Não é um link para a página do projeto, ou coisa
+				assim, é algo útil.
 			</aside>
 			</section>
 			<section>
@@ -555,8 +557,10 @@
 				</p>
 				<br/>
 				<ul>
-					<li>Mas se é pra lembrar de uma coisa só, lembre do Ctrl-R.</li>
-					<li>Mas, a coisa mais importante do shell é o |, porque ...</li>
+					<li>Se é pra lembrar de uma coisa só, lembre do Ctrl-R.</li>
+					<li><i>Shell (bash) scripting</i>? A melhor referência é o <a href="http://tldp.org/LDP/abs/html/">ABS</a>.</li>
+					<br/>
+					<li>Mas o mais importante do shell é o |, porque ...</li>
 				</ul>
 				<aside class="notes">
 				<ul>
@@ -566,17 +570,57 @@
 			</section>
 			<section>
 				<h3>O shell não para no /bin/sh</h3>
-				<p>O poder do shell está na família de comandos unix.</p>
+				<br/>
+				<p>O poder do "shell" está na família de comandos unix.</p>
+				<br/>
 				<ul>
-					<li>find, xargs, grep, sed, awk ...</li>
-					<li>... cut, sort, tr, wc e outros do <a
+					<li>
+					<a href="http://mywiki.wooledge.org/UsingFind">find</a>, 
+					<a href="http://www.cyberciti.biz/faq/linux-unix-bsd-xargs-construct-argument-lists-utility/">xargs</a>, 
+					<a href="http://linux.die.net/man/1/grep">grep</a>, 
+					<a href="http://www.grymoire.com/Unix/Sed.html#uh-0">sed</a>, 
+					<a href="http://www.cyberciti.biz/faq/bash-scripting-using-awk/">awk</a> ...</li>
+					<li>... <a href="https://www.google.com/search?q=useless+use+of+cat">cat</a>, cut, sort, tr, wc e outros do <a
 						href="http://www.catonmat.net/download/gnu-coreutils-cheat-sheet.png">coreutils</a>.</li>
 				</ul>
 				<br/>
 				<pre><code>
-ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
+$ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
+   3002 php5-cgi
+    122 master
+    116 sshd
+    115 freeswitc
+     82 mysqld
+     60 ssh
+     60 slapd
+     52 lighttpd
+     47 beam.smp
+     43 inet_geth
 				</code></pre>
+				<small>E o exemplo acima é cortesia do <a
+								href="http://www.commandlinefu.com/commands/view/1057/show-top-running-processes-by-the-number-of-open-filehandles-they-have">commandlinefu.com</a>.</small>
 				<aside class="notes">
+
+				O grande poder do shell do unix não está no shell em si, seja ele bash, zsh ou qualquer outro.  Mas no caminhão
+				de comandos que tu tens a disposição, que na sua maioria processam texto. find, xargs, sed, cut, sort ... eles
+				recebem texto como entrada, entregam texto na saída. Cada um faz uma coisa só, mas faz bem feito, como dita a
+				filosofia unix. E é o pipe que junta todos eles.
+
+				Olhem o exemplo no slide. Esse comando mostra os processos com mais arquivos abertos no sistema. Ele começa
+				listando todos os arquivos abertos, depois usa o awk para pegar só primeiro campo de cada linha (que é o nome do
+				processo), daí ele ordena com o sort, que é para o uniq -c contar quantas vezes aparece cada processo, e ordena
+				de novo, em ordem númerica e reversa, e usa o head para mostrar só os 10 primeiros. Se alguém não entendeu o que
+				tá acontecendo, executa depois um comando de cada vez, que vai entender.
+
+				Provavelmente tem um jeito melhor de fazer isso. Não interessa. O que interessa é tu estar familiarizado com esses
+				comandos para conseguir extrair do sistema a informação que tu quer de forma rápida. Eu uso muito esse tipo de
+				comando gigante cheio de pipes.
+				
+				Uma sugestão que eu dou para vocês é dar uma olhada em todos programas do pacote coreutils do projeto GNU. 
+				Boa parte desses utilitários tá no pacote coreutils do projeto GNU, e uma sugestão que eu dou para vocês é dar
+				uma olhada no que faz cada um dos programas que tá no coreutils, um por um. Para descobrir aqueles comandinhos
+				que tu não conhece, mas que podem ser úteis na hora de fazer uma linha de comando dessas. Olhem o link que eu
+				botei ali que tem uma tabelinha com a descrição de cada um.
 				</aside>
 			</section>
 			<section>
@@ -677,7 +721,7 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 					</ul>
 				</ul>
 			</section>
-			<section>
+			<!--<section>
 				<p>Que tal investir um pouco?</p>
 				<br/>
 				<ul>
@@ -685,7 +729,7 @@ ldapsearch uid|grep ^uid|cut -f2 -d" "|sort|xargs -L1 groups|sed 's/ : /;/'
 					<li>ACM?</li>
 					<li>LinuxMag?</li>
 				</ul>
-			</section>
+				</section> -->
 		</section>
 
 		<section>
