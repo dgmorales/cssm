@@ -81,13 +81,12 @@
 				<br/>
 				<ol>
 						<li>O que a gente faz</li>
-						<li>Gerenciando o caos</li>
-						<li>Quatro coisas sobre resolução de problemas</li>
+						<li>6 hábitos de um mestre Sysadmin</li>
 						<li>Mil e uma maneiras de pedir ajuda</li>
 						<li>Invista nas ferramentas do dia-a-dia</li>
-						<li>Livros, blogs e podcasts</li>
 						<li>Nosso futuro</li>
-						<li>Reatividade é o inimigo</li>
+						<li>Livros, blogs e podcasts</li>
+						<li>O 7&#186; hábito</li>
 				</ol>
 				<br/>
 				<br/>
@@ -97,6 +96,11 @@
 				<p>
 				Bom, vocês tem aí no slide um overview da palestra, só pra dar
 				uma noção do que vem pela frente.
+				</p>
+
+				<p>
+				Antes de começar, me tirem uma dúvida: quem aí que não sabe o
+				que é um sysadmin ou o que ele faz?
 				</p>
 
 				<p>
@@ -157,8 +161,8 @@
 				</p>
 
 				<p>
-				Nós sysadmins mantemos a TI de pé. Nos bastidores, onde quase
-				ninguém enxerga a gente. A não ser quando dá problema. 
+				No final das contas, nós sysadmins mantemos as empresas ou instituições funcionando. É uma responsabilidade muito grande. 
+				Que a gente cumpre dos bastidores, onde quase ninguém enxerga a gente. A não ser quando dá problema.
 				</p>
 
 				<p>
@@ -185,44 +189,11 @@
 					
 				</aside>
 				</section>
+
 			-->
-			<section>
-				<h3>Um dia normal</h3>
-				<br/>
-				<p>
-				Existe um problema ou necessidade. Incompreendido. Confuso. Urgente. Você não sabe como resolvê-lo. <br>
-				<br>
-				Mas <b>vai descobrir</b>.
-				</p>
-				<aside class="notes">
-
-				<p>
-				E tantas e tantas vezes, esses problemas chegam para nós assim: tá
-				tudo parado, não imprime, o sistema tá lento. É tudo confuso, e é
-				urgente, é quase sempre urgente. Ninguém sabe direito o que tá
-				acontecendo, ou como resolver, e nem nós. 
-				</p>
-
-					<p>Mas é a gente que vai descobrir, e vai resolver.</p> 
-					
-					<p>E é o nosso dia-a-dia. Esse é o nosso	diferencial.</p>
-
-					<p>
-					Nós estamos constantemente lidando com o desconhecido, tendo que
-					aprender novos conceitos, tecnologias, técnicas e softwares
-					rapidamente, e aplicando isso tudo logo em seguida. Até porque a
-					tecnologia evolui muito rápido e tudo está em constante mudança.
-					</p>
-
-				</aside>
-			</section>
 		</section>
 
-		<section>
-			<section>
-			<h2>Gerenciando o Caos</h2>
-
-			<p>O caos é uma doença. Nós somos a cura.</p>
+			<!--<p>O caos é uma doença. Nós somos a cura.</p>
 			<br/>
 			<img src="images/OrderChaosSignPost_©depositphotos.com_stuartmiles_8052674_wd.jpg" width="40%" />
 
@@ -234,8 +205,15 @@
 
 			 É o caos. Ele é o nosso arqui-inimigo. Eu perco muito mais lutas pra
 			 ele do que eu gostaria, mas aqui vão algumas dicas.
-			</aside>
+			 </aside>-->
 
+		<section>
+			<section>
+			<h2>6 hábitos dos melhores sysadmins</h2>
+				<aside class="notes">
+				Bom, fazendo uma paródia aqui do Steven Covey e o seus hábitos, vamos falar aqui de algumas atitudes que eu
+				considero essenciais num sysadmin, que todos devemos desenvolver.
+				</aside>
 			</section>
 
 			<section>
@@ -323,9 +301,16 @@
 
 			<h3>Automatize</h3>
 
-			Gráfico do Limoncelli?
+			<p class="fragment">
 
-			http://xkcd.org/1205/
+			<img src="images/is_it_worth_the_time.png"/>
+			<br/>
+			<small><a
+					href="http://xkcd.org/1205/">http://xkcd.org/1205/</a>
+				(veja também o <a href="http://xkcd.ord/974/">#974</a>)</small>
+			</p>
+			</p>
+
 			<aside class="notes">
 
 			Eu sou um fanático por um automatização. Automatização é um termo bem
@@ -334,61 +319,47 @@
 			a saúde dos serviços manualmente.
 
 			Automatização poder ser uma coisa simples, uma tarefa no cron, um
-			script em bash, um script maior, um programa. Pode ser até usar um
-			protocolo dinâmico de roteamento, como OSPF, em vez de ficar gerenciando
-			rotas estáticas. Talvez na sua forma mais elaborada, um sistema de
-			gerência de configuração, puppet, chef, cfengine, eu vou falar mais
-			deles depois.
+			script pequeno em shell. Pode ser até usar um protocolo dinâmico
+			de roteamento, como OSPF, em vez de ficar gerenciando rotas
+			estáticas manualmente. Mas também claro pode ser um script grande,
+			um programa, ou então um código de um  sistema de gerência de
+			configuração, puppet, chef, cfengine, eu vou falar mais deles
+			depois.
 
 			A gente tem cada vez mais demandas, e na minha visão investir em
 			automatização, e todas essas formas que eu falei, é o único de jeito de
 			conseguir suprir essas demandas com qualidade.
 
-			Uma dúvida clássica é sobre quando automatizar. O livro do Tom
-			Limoncelli tem um a sugestão interessante: ...
+			Claro que uma dúvida clássica que surge nessas horas é se tu vai
+			gastar mais tempo automatizando do que fazendo aquilo n vezes. Ou
+			seja, se vale a pena automatizar.
 
-			trocar pelo xkcd direto?
+			Bom, se a dúvida for muito grande vocês recorrer ao nosso velho
+			amigo, o xkcd. 
+			(passa slide!) 
+			
+			Essa tira fala exatamente sobre isso. É um gráfico, que me diz por
+			exemplo que, se eu faço uma tarefa diariamente, e automatizando
+			ela eu economizo 30 minutos, então se eu gastar 5 semanas
+			automatizando ela, vai demorar 5 anos para eu ter lucro, para ter
+			valido a pena. Ou seja, dentro de ano, uma semana. Pra economizar
+			30 minutos por dia.
 
-			Exemplo do gráfico do xkcd
+			Acho que perigo já ter gastado mais que isso.
 
-			mas eu sou muito fanático. Lembrar de contar o tempo da documentação.
-
-			Automatização e documentação remove a tua necessidade,
+			Mas eu acho automatização não é só a respeito do tempo economizado,
+			A principal outra vantagem é consistência do resultado.  Se
+			uma pessoa faz manualmente, pode ficar um pouco diferente cada vez
+			que é feito, pessoas cometem erros, um computador é muito  melhor
+			em fazer tarefas repetitivas do que a gente. 
+			
+			Além do mais, eu acho preferível tu gastar um tempo a mais fazendo
+			uma tarefa inteligente, que te acrescenta alguma coisa, do que
+			ficar repetidamente uma tarefa besta que não te acrescenta nada.
+			
+			Mas vamos adiante.
 			</aside>
 			</section>
-
-
-		</section>
-
-		<section>
-			<section>
-			<h2>3 coisas sobre<br/> resolução de problemas</h2>
-			<aside class="notes">
-				Eu ia chamar esta parte de "Como resolver problemas?", mas resolvi dar
-				um título menos ambicioso para ela, e vou então mencionar 3 coisas.
-			</aside>
-			</section>
-
-			<!--<section>
-			<h3>O primeiro passo é para trás</h3>
-			<br/>
-			<p>Sempre avalie a qualidade da informação recebida.</p>
-			<br/>
-
-			<ul>
-			<li>o usuário pede uma solução xyz.</li>
-				<ul>
-				<li>Mas qual o problema?</li>
-				</ul>
-			<li>O usuário diz qual é causa do problema.</li>
-				<ul>
-				<li>Mas qual é o sintoma? E a extensão dele?</li>
-				</ul>
-			</ul>
-			<aside class="notes">
-				Sobre a qualidade: cuidado com o telefone sem fio.
-			</aside>
-			</section>-->
 
 			<section>
 			<h3>Atire na cabeça</h3>
@@ -396,35 +367,26 @@
 			<p>Não atacar a causa raiz é como dar um "soneca" no problema.</p>
 
 			<aside class="notes">
-				Problemas são como zumbis, se tu não atirar na cabeça ele levanta e volta pra te assombrar de novo. Os problemas
-				também são muitos e querem o nosso cérebro, como os zumbis.
 
-				E o que é cabeça do problema? É a causa raiz, é daonde o problema nasce.
+			<p>
+			Problemas são como zumbis, se tu não atirar na cabeça ele levanta e volta pra te assombrar de novo. Os problemas
+			também são muitos e querem o nosso cérebro, como os zumbis.
+			</p>
+
+			<p>
+			E o que é cabeça do problema? É a causa raiz, é daonde o problema nasce.
+			</p>
 				
-				Exemplo básico: espaço em disco lotando no servidor.
-				Pescou o problema com o sistema de monitoração, achou uns logs
-				grandes, removeu, liberou espaço e tá se achando o máximo. Mas
-				e daí? x dias depois vai lotar de novo. Como evitar?
-				(logrotate?, applicação tá gerando um erro não esperado que tá
-				aumentando o log?).
+			<p>
+			Exemplo básico: espaço em disco lotando no servidor.
+			Pescou o problema com o sistema de monitoração, achou uns logs
+			grandes, removeu, liberou espaço e tá se achando o máximo. Mas
+			e daí? x dias depois vai lotar de novo. Como evitar?
+			(logrotate?, applicação tá gerando um erro não esperado que tá
+			aumentando o log?).
+			</p>
 			</aside>
 			</section>
-
-<!--			<section>
-			<h3>Reproduza e teste</h3>
-			<br/>
-			<ul>
-				<li>Reproduzir o problema é meio caminho da solução.</li>
-				<li>Teste <b>uma coisa de cada vez!</b></li>
-				<li>E teste <b>antes</b> e depois.</li>
-			<aside class="notes">
-				Se tu não consegue reproduzir o problema, a solução passa a ser chute. Pra começar tu pode até duvidar que ele
-				existe. 
-
-				Teste uma coisa de cada vez, se não ...
-			</aside>
-			</section>
--->
 
 			<section>
 			<h3>Documente</h3>
@@ -446,6 +408,38 @@
 			</aside>
 			</section>
 
+			<section>
+				<h3>Aceite o desconhecido</h3>
+				<br/>
+				<p>
+				Existe um problema ou necessidade. Incompreendido. Confuso. Urgente. Você não sabe como resolvê-lo. <br>
+				<br>
+				Mas <b>vai descobrir</b>.
+				</p>
+				<aside class="notes">
+
+				<p>
+				E tantas e tantas vezes, esses problemas chegam para nós assim: tá
+				tudo parado, não imprime, o sistema tá lento. É tudo confuso, e é
+				urgente, é quase sempre urgente. Ninguém sabe direito o que tá
+				acontecendo, ou como resolver, e nem nós. 
+				</p>
+
+				<p>Mas é a gente que vai descobrir, e vai resolver.</p> 
+				
+				<p>E é o nosso dia-a-dia. Esse é o nosso	diferencial.</p>
+
+				<p>
+				Nós estamos constantemente lidando com o desconhecido, tendo que
+				aprender novos conceitos, tecnologias, técnicas e softwares
+				rapidamente, e aplicando isso tudo logo em seguida. Até porque a
+				tecnologia evolui muito rápido e tudo está em constante mudança.
+				</p>
+
+				</aside>
+			</section>
+
+
 		</section>
 
 
@@ -453,7 +447,11 @@
 			<section>
 			<h2>Mil e uma maneiras de pedir ajuda</h2>
 			<br/>
-			<p><i>life --help</i></p>
+			<p><i>work --help</i></p>
+			<aside class="notes">
+			
+			</aside>
+
 			</section>
 
 			<section>
@@ -506,7 +504,7 @@
 			<section>
 			<br/>
 			<ul>
-				<li>man <a href="http://linux.die.net/man/1/man">man</a>.</li>
+				<li><a href="http://www.opsschool.org/en/latest">Ops School Curriculum</a></li>
 				<li><a href="http://wikipedia.org">Wikipedia</a> para resumos curtos e objetivos.</li>
 				<li>Dê valor ao <a href="http://www.wikihow.com/Get-Started-with-IRC-%28Internet-Relay-Chat%29">IRC</a>.</li>
 				<br/>
@@ -517,6 +515,7 @@
 					precisar.</li>
 				</ul>
 				<br/>
+				<li>Ah, eu ia esquecendo: man <a href="http://linux.die.net/man/1/man">man</a>.</li>
 			</ul>
 			</section>
 		</section>
@@ -525,8 +524,8 @@
 			<section>
 			<h2>Invista nas ferramentas do dia-a-dia</h2>
 			<br/>
-			<!--<p>Afie o seu machado.</p>-->
 			<aside class="notes">
+				Afie o seu machado.
 				Contar a história dos dois lenhadores. Link?
 
 				É o investimento óbvio.
@@ -551,31 +550,6 @@
 					Você mais pensa do que digita? Tem certeza? (email, chat
 					rooms, documentação, discussões online, etc.)
 					Estatísticas?
-				</aside>
-			</section>
-			<section>
-				<h3>O seu editor de texto</h3>
-				<br/>
-				<p>O uso suficientemente avançado do Vim é indiscernível de
-				mágica.</p>
-				<br/>
-				<ul>
-					<li>Movimentos. O segredo é combinar ações com eles.</li>
-					<li>Viva o ponto.</li>
-					<li>Auto complete qualquer coisa com Ctrl-P e cia. </li>
-					<li>Macros, seleções de bloco, regex search/replace, ...</li>
-					<li> ... e 
-					<a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">muito</a>,
-					<a href="http://www.ukuug.org/events/linux2004/programme/paper-SMyers/Linux_2004_slides/vim_tips/">muito</a>
-					mais.</li>
-				</ul>
-				<aside class="notes">
-				<ul>
-					<li>ctX, cfX, cXw</li>
-					<li>CtrlX-F para completar paths</li>
-					<li>qq, @q</li>
-				</ul>
-					
 				</aside>
 			</section>
 			<section>
@@ -641,48 +615,45 @@ $ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
 				botei ali que tem uma tabelinha com a descrição de cada um.
 				</aside>
 			</section>
+
 			<section>
-				<h3>Acesso remoto</h3>
+				<h3>Depois do shell vem o quê?</h3>
 				<br/>
 				<ul>
-					<li><i>Port forwarding</i> com -L e -R (reverso!).</li>
-					<li>Ou <i>X11 forwarding</i> com o -X. Ou ainda <i>agent
-						forwarding</i>.</li>
-					<li>Conexão SSH indireta (proxy), atalhos de hostnames, login seguro
-					sem senhas,  entre
-					<a
-						href="http://blogs.perl.org/users/smylers/2011/08/ssh-productivity-tips.html">
-						vários</a> <a
-						href="http://www.itworld.com/it-managementstrategy/261500/16-ultimate-openssh-hacks">outros</a>
-						recursos.
-					</li>
+					<li>O ssh é <a href="http://blogs.perl.org/users/smylers/2011/08/ssh-productivity-tips.html"> muito</a> 
+							<a href="http://www.itworld.com/it-managementstrategy/261500/16-ultimate-openssh-hacks">mais</a>
+							que um telnet seguro.</li>
+					<li>Use o <a href="http://dj-bri-t.net/2009/10/gnu-screen-and-byobu-made-easy/">screen</a>
+							ou o <a href="http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/">tmux</a>.</li>
+					<br/>
+					<li>O uso suficientemente <a href="http://www.ukuug.org/events/linux2004/programme/paper-SMyers/Linux_2004_slides/vim_tips/">avançado</a>
+							do <a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim</a> é indiscernível de mágica.</li>
 				</ul>
-				<br/>
-				<br/>
-				<p>E ... falando em acesso remoto, você usa o <a
-					href="http://dj-bri-t.net/2009/10/gnu-screen-and-byobu-made-easy/">screen</a>
-				ou o <a
-					href="http://blog.hawkhost.com/2010/06/28/tmux-the-terminal-multiplexer/">tmux</a>?</p>
 				<aside class="notes">
+					
 				</aside>
 			</section>
+
 			<section>
-			<h3>Use controle de versão</h3>
-			<br/>
-			<p>Chega de <i>.old</i>, <i>.bak</i>, <i>.bak-20130201</i>, ... </p>
-			<br/>
-			<ul>
-				<li><i>Version Control Systems</i> (VCS). Há <a
-					href="http://www.smashingmagazine.com/2008/09/18/the-top-7-open-source-version-control-systems/">muitos</a>, aprenda um.</li>
-				<li>Sugestão: git (<a href="http://git-scm.com/book">livro online</a>).</li>
-			<br/>
-				<li><i>Mas eu não sou desenvolvedor!</i></li>
+				<h3>Use controle de versão</h3>
+				<br/>
+				<p>Chega de <i>.old</i>, <i>.bak</i>, <i>.bak-20130201</i>, ... </p>
+				<br/>
 				<ul>
-					<li>Tudo bem, mas que tal manter o /etc versionado? Conheça o <a
-						href="http://blog.hoopycat.com/2009/12/keep-track-of-configuration-changes-using-etckeeper">etckeeper</a>.
-					</li>
+					<li><i>Version Control Systems</i> (VCS). Há <a
+						href="http://www.smashingmagazine.com/2008/09/18/the-top-7-open-source-version-control-systems/">muitos</a>, aprenda um.</li>
+					<li>Sugestão: git (<a href="http://git-scm.com/book">livro online</a>).</li>
+				<br/>
+					<li><i>Mas eu não sou desenvolvedor!</i></li>
+					<ul>
+						<li>Tudo bem, mas que tal manter o /etc versionado? Conheça o <a
+							href="http://blog.hoopycat.com/2009/12/keep-track-of-configuration-changes-using-etckeeper">etckeeper</a>.
+						</li>
+					</ul>
 				</ul>
-			</ul>
+				<aside class="notes">
+				Talvez controle de versão não seja uma ferramenta do seu dia-a-dia, mas devia ser.	
+				</aside>
 			</section>
 		</section>
 
@@ -827,13 +798,12 @@ $ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
 			<section>
 				<h3>Blogs</h3>
 				<ul>
+					<li>Todo final de ano: <a href="http://sysadvent.blogspot.com.br">Sysadvent</a></li>
 					<li><a href="http://www.everythingsysadmin.com">Everything Sysadmin</a></li>
 					<li><a href="http://puppetlabs.com/blog">Puppetlabs Blog</a></li>
 					<li><a href="http://packetpushers.net">Packet Pushers</a></li>
 					<li><a href="http://highscalability.com">Highscalability</a></li>
-					<li>Todo final de ano: <a href="http://sysadvent.blogspot.com.br">Sysadvent</a></li>
-					<li><a href="http://lwn.net">LWN</a> | <a href="http://slashdot.org">Slashdot</a></li>
-					<li>Jabá: <a href="http://doauto.wordpress.com">Do, Automate, Repeat</a>
+					<li><a href="http://lwn.net">LWN</a>
 				</ul>
 				<br/>
 			</section>
@@ -860,40 +830,37 @@ $ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
 						</small></li>
 					</ul>
 				</ul>
+				
+				<aside class="notes">
+					Podcasts são interantes porque tu pode ouvir dentro do carro, de pé no ônibus, ou batendo perna na rua.
+
+					Tem muitos por aí, mas os que eu ouço regularmente e recomendo para vocês são esses dois, o Packet Pushers,
+					que é sobre networking, e o DevOps Cafe, que fala, obviamente sobre devops, e muito sobre gerência de
+					configuração, por exemplo.
+
+					Marquei aí alguns shows que eu achei especialmente bons, como ...
+				</aside> 
 			</section>
-			<!--<section>
-				<p>Que tal investir um pouco?</p>
-				<br/>
-				<ul>
-					<li>USENIX? A revista login; é bem interessante. </li>
-					<li>ACM?</li>
-					<li>LinuxMag?</li>
-				</ul>
-				</section> -->
 		</section>
 
 		<section>
-			<h2>Reatividade é o inimigo</h2>
-			<p><b>Sempre</b> temos algo pra fazer.</p>
+			<h2>O 7&#186; hábito</h2>
+			<br/>
+			<p>Reatividade é o inimigo. E lembre que <b>SEMPRE</b> temos algo pra fazer.</p>
 			<aside class="notes">
 
 			Muitas vezes as circuntâncias do nosso trabalho nos levam a ficar só reagindo aos problemas e demandas que chegam
-			para a gente. 
+			para a gente. Mas tem que lutar contra isso e buscar sempre espaço para a pró-atividade. Espaço para pensar
+			sobre o que gente tá fazendo, pensar como melhorar, espaço pra afiar o nosso machado.
 			
-			Mas temos que combater isso  e buscar sempre espaço para a pró-atividade. Espaço para pensar sobre os nossos
-			processos e como a gente pode melhorá-los, para estudar os problemas que mais nos incomodam, e como a gente pode
-			se livrar deles definitivamente, espaço para afiar nosso machado, e aumentar a nossa produtividade.
-
-			Às vezes a reação vira um vício, e mesmo que surja o espaço para fazer algo mais, tu acaba não aproveitando. 
-
+			Às vezes a reação vira um vício, e mesmo que surja o espaço para fazer algo mais, a gente acaba não aproveitando.
 			A gente não é garçon. Se não tem ninguém te chamando ou dizendo o que fazer, então aproveita! Inventa alguma
 			coisa, testa, pesquisa, fuça. Na dúvida, tem aqui nesses slides um farto material para estudo.
 
-			Isso vai ser recompensado, só que a recompensa muitas vezes é mais trabalho :)
-
-			A gente joga papo fora ou acessa qq bobagem na internet para descansar, pq precisa de um folga, pq tá no final do
-			expediente, porque o dia tá calmo, pq tá de saco cheio, mas jamais, nunca, porque "não tem nada para fazer". Não
-			te engana com isso. Se tu escolheu ser um sysadmin SEMPRE vai ter alguma coisa a fazer. É só procurar.
+			E eu não tô dizendo que um sysadmin não descansa nunca, a gente pode descansar, pode jogar papo fora ou ficar
+			vendo bobagem na Internet. Mas é pra dar uma folga, porque o dia tá calmo, pq tá de saco cheio, mas jamais, nunca,
+			porque "não tem nada para fazer". Não te engana com isso. É só procurar. Se tu escolheu ser um sysadmin SEMPRE vai
+			ter alguma coisa a fazer. 
 			</aside>
 		</section>
 
@@ -917,7 +884,7 @@ $ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
 			<br/>
 			<p>Slides: &nbsp; <a href="http://dgmorales.github.io/cssm/">http://dgmorales.github.io/cssm/</a></p>
 			<p>
-			Blog: <i>Do, Automate, Repeat</i> &nbsp; <a
+			Meu blog: <i>Do, Automate, Repeat</i> &nbsp; <a
 				href="http://doauto.wordpress.com">http://doauto.wordpress.com</a>
 			</p>
 			<p>
