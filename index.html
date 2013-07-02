@@ -63,9 +63,9 @@
 				<p>
 				Principalmente nesses anos de Propus eu venho tendo várias
 				experiências ajudando e orientando sysadmins mais jovens e/ou
-				inexperientes do que eu.  E essa palestra, Como ser um
-				Sysadmin melhor, é uma maneira de compartilhar as minhas dicas
-				com uma audiência maior.
+				inexperientes do que eu. E essa palestra, Como ser um
+				Sysadmin melhor, é uma maneira de compartilhar algumas das
+				dicas que eu acho mais importantes com uma audiência maior.
 				</p>
 
 				<p>
@@ -81,7 +81,7 @@
 				<br/>
 				<ol>
 						<li>O que a gente faz</li>
-						<li>6 hábitos de um mestre Sysadmin</li>
+						<li>6 hábitos dos melhores Sysadmins</li>
 						<li>Mil e uma maneiras de pedir ajuda</li>
 						<li>Invista nas ferramentas do dia-a-dia</li>
 						<li>Nosso futuro</li>
@@ -134,8 +134,7 @@
 		<section>
 			<section>
 				<h2>O que a gente faz</h2>
-				<br/>
-				<img src="images/sysadmin-cloud2.svg" width="100%" border="0" style="border:none;vertical-align:middle;" /> 
+				<img src="images/sysadmin-cloud2.svg" width="90%" border="0" style="border:none;vertical-align:middle;" /> 
 				<aside class="notes">
 
 				<p>
@@ -450,12 +449,18 @@
 			<p><i>work --help</i></p>
 			<aside class="notes">
 			
-			</aside>
+			E como a gente descobre?
 
+			Bom, se eu tivesse uma resposta mágica que coubesse aqui em poucos
+			slides, eu estaria rico provavelmente.
+
+			Mas uma coisa que certamente a gente faz muito é pesquisar. A
+			gente pode não saber, mas precisa saber onde procurar.
+			</aside>
 			</section>
 
 			<section>
-			<h3>Há vida além do Google</h3>
+			<h3>Oráculos</h3>
 				<a href="http://google.com/"><img src="images/sites/largeNewGoogleLogoFinalFlat-a.png" width="50%" style="border:none;" /></a> <br/> 
 				<p><small>
 					<a
@@ -466,6 +471,7 @@
 						dicas sobre o Google</a>
 	
 				</small></p>
+			<br/>
 			<div class="floater" style="clear:both;">
 				<img src="images/sites/stackexchange-logo.png" style="border:none;" /> <br/> 
 				<p><small><a href="http://stackexchange.com/sites#technology">stackexchange.com</a></small></p>
@@ -478,10 +484,12 @@
 				<img src="images/sites/stackoverflow-logo.png" style="border:none;" />
 				<p><small><a href="http://stackoverflow.com/">stackoverflow.com</a></small></p>
 			</div>
+			<!--
 			<div class="floater">
 				<img src="images/sites/Terminal.hicube.png" width="158" height="158" style="border:none;" /> <br/> 
 				<p><small><a href="http://commandlinefu.com/">commandlinefu.com</a></small></p>
 			</div>
+			-->
 			</section>
 
 			<section>
@@ -508,12 +516,14 @@
 				<li><a href="http://wikipedia.org">Wikipedia</a> para resumos curtos e objetivos.</li>
 				<li>Dê valor ao <a href="http://www.wikihow.com/Get-Started-with-IRC-%28Internet-Relay-Chat%29">IRC</a>.</li>
 				<br/>
+				<!-- 
 				<li>O inferno na terra: sites de fabricantes de HW.</li>
 				<ul>
 					<li>Procure <i>Support</i>, jamais <i>Products</i>.</li>
 					<li>Consiga acesso a área restrita, <b>antes</b> de
 					precisar.</li>
 				</ul>
+				-->
 				<br/>
 				<li>Ah, eu ia esquecendo: man <a href="http://linux.die.net/man/1/man">man</a>.</li>
 			</ul>
@@ -542,6 +552,7 @@
 					A primeira ferramenta é a linguagem.
 				</aside>
 			</section>
+			<!--
 			<section>
 				<h3>O seu teclado</h3>
 				<p><a href="http://www.typeonline.co.uk/lesson1.html">Aprenda</a> a
@@ -552,6 +563,7 @@
 					Estatísticas?
 				</aside>
 			</section>
+			-->
 			<section>
 				<h3>O shell não para no /bin/sh</h3>
 				<br/>
@@ -573,6 +585,19 @@
 					</li>
 					<li>o mais importante é o pipe |</li>
 				</ul>
+				<p>
+				<aside class="notes">
+
+				<p>Bom, o shell, o bash, tem seus truques. O recurso que ninguém pode deixar de conhecer é a procura no
+				histórico com o Ctrl-R. Chega de ficar botando pra cima quinhentas vezes procurando aquele comando que tu usou.
+				E tem outras dicas inclusive sobre o histórico nos links aí.</p>
+
+				Mas o grande poder do shell do unix não está no shell em si, seja ele bash, zsh ou qualquer outro.  Mas no caminhão
+				de comandos que tu tens a disposição, que na sua maioria processam texto. find, xargs, sed, cut, sort ... eles
+				recebem texto como entrada, entregam texto na saída. Cada um faz uma coisa só, mas faz bem feito, como dita a
+				filosofia unix. E é o pipe que junta todos eles.
+				</aside>
+				</p>
 				</section>
 				<section>
 				<h4>Exemplo</h4>
@@ -593,26 +618,27 @@ $ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
 								href="http://www.commandlinefu.com/commands/view/1057/show-top-running-processes-by-the-number-of-open-filehandles-they-have">commandlinefu.com</a>.</small>
 				<aside class="notes">
 
-				O grande poder do shell do unix não está no shell em si, seja ele bash, zsh ou qualquer outro.  Mas no caminhão
-				de comandos que tu tens a disposição, que na sua maioria processam texto. find, xargs, sed, cut, sort ... eles
-				recebem texto como entrada, entregam texto na saída. Cada um faz uma coisa só, mas faz bem feito, como dita a
-				filosofia unix. E é o pipe que junta todos eles.
 
-				Olhem o exemplo no slide. Esse comando mostra os processos com mais arquivos abertos no sistema. Ele começa
-				listando todos os arquivos abertos, depois usa o awk para pegar só primeiro campo de cada linha (que é o nome do
-				processo), daí ele ordena com o sort, que é para o uniq -c contar quantas vezes aparece cada processo, e ordena
-				de novo, em ordem númerica e reversa, e usa o head para mostrar só os 10 primeiros. Se alguém não entendeu o que
-				tá acontecendo, executa depois um comando de cada vez, que vai entender.
+				<p>
+				Olhem o exemplo no slide. Esse comando mostra os processos com mais arquivos abertos no sistema. Ele pega um
+				comando, que lista todos os arquivos abertos do sistema, e vai mastigando essa informação, pega só os nomes dos
+				processos, ordena, conta, ordena pela contagem e pega só os 10 primeiros resultados. Eu não vou explicar o que
+				cada comandinho tá fazendo, vocês podem testar depois passo a passo. 
+				</p>
 
-				Provavelmente tem um jeito melhor de fazer isso. Não interessa. O que interessa é tu estar familiarizado com esses
-				comandos para conseguir extrair do sistema a informação que tu quer de forma rápida. Eu uso muito esse tipo de
-				comando gigante cheio de pipes.
+				<p>
+				Provavelmente tem um jeito melhor de fazer isso. Não me interessa aqui mostrar ESSE comando para vocês. O que
+				me interessa é convencer vocês que quando tu está familiarizado com esses comandos tu consegue extrair do
+				sistema a informação que tu quer de forma rápida. Sem precisar escrever um super script ou encontrar um programa
+				que te diga exatamente o que tu quer.
+				</p>
 				
-				Uma sugestão que eu dou para vocês é dar uma olhada em todos programas do pacote coreutils do projeto GNU. 
-				Boa parte desses utilitários tá no pacote coreutils do projeto GNU, e uma sugestão que eu dou para vocês é dar
-				uma olhada no que faz cada um dos programas que tá no coreutils, um por um. Para descobrir aqueles comandinhos
-				que tu não conhece, mas que podem ser úteis na hora de fazer uma linha de comando dessas. Olhem o link que eu
-				botei ali que tem uma tabelinha com a descrição de cada um.
+				<p> 
+				Uma sugestão que eu dou para vocês é dar uma olhada em todos programas do pacote coreutils do projeto GNU. Para
+				descobrir aqueles comandinhos que tu não conhece, mas que podem ser úteis na hora de fazer uma linha de comando
+				dessas. Olhem o link que eu botei ali que tem uma tabelinha com a descrição de cada um.
+				</p>
+
 				</aside>
 			</section>
 
@@ -790,8 +816,12 @@ $ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
 				<ul>
 					<li><a href="http://www.amazon.com/Practice-System-Network-Administration-ebook/dp/B004JLMUJ0/ref=sr_1_1_bnp_1_kin?ie=UTF8&qid=1371948468&sr=8-1&keywords=the+practice+of+network+and+system+administration">The Practice of System and Network Administration</a></li>
 					<li><a href="http://www.amazon.com/Time-Management-System-Administrators-ebook/dp/B0026OR2WM/ref=sr_1_1_bnp_1_kin?ie=UTF8&qid=1371948538&sr=8-1&keywords=time+management+for+system+administrators">Time Management for System Administrators</a></li>
+					<br/>
 					<li><a href="http://www.amazon.com/Python-Linux-System-Administration-ebook/dp/B00BL8LPF4/ref=sr_1_1_bnp_1_kin?ie=UTF8&qid=1371948576&sr=8-1&keywords=python+for+system+administrators">Python for Unix and Linux System Administration</a></li>
-					<li>UNIX Network Programming</li>
+					<li><a href="http://openbookproject.net/thinkcs/python/english2e/">How to Think Like a Computer Scientist</a></li>
+					<br/>
+					<li><a href="http://www.amazon.com/IP-Routing-Ravi-Malhotra/dp/0596002750/ref=sr_1_1?s=books&ie=UTF8&qid=1372806242&sr=1-1&keywords=ip+routing">IP Routing</a></li>
+					<li><a href="http://www.amazon.com/Designing-Large-Scale-Kevin-Dooley/dp/0596001509/ref=sr_1_1?s=books&ie=UTF8&qid=1372806224&sr=1-1&keywords=designing+large+scale+lans">Designing Large Scale LANs</a></li>
 				</ul>
 			</section>
 
@@ -806,6 +836,19 @@ $ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
 					<li><a href="http://lwn.net">LWN</a>
 				</ul>
 				<br/>
+				
+				<aside class="notes">
+				<p>
+				Aí vão alguns blogs que eu recomendo. Tem o blog do Tom Limoncelli, o Everything Sysadmin, tem o da PuppetLabs,
+				que tem muita coisa geral sobre gerência de configuração e coisas relacionadas, mas eu quero destacar mais o
+				</p>
+				
+				<p>
+				O blog do sysadvent, que só tem publicação em Dezembro, todos os dias até o Natal, são 25 posts escolhidos a
+				dedo.  Geralmente tem coisa muito interessante. Vocês olhar os post do ano passado no site para ter uma ideia do
+				que eu estou falando.
+				</p>
+				</aside>
 			</section>
 
 			<section>
@@ -832,13 +875,15 @@ $ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
 				</ul>
 				
 				<aside class="notes">
-					Podcasts são interantes porque tu pode ouvir dentro do carro, de pé no ônibus, ou batendo perna na rua.
+					<p>Podcasts são interessantes porque tu pode ouvir dentro do carro, de pé no ônibus, ou batendo perna na rua.</p>
 
+					<p>
 					Tem muitos por aí, mas os que eu ouço regularmente e recomendo para vocês são esses dois, o Packet Pushers,
 					que é sobre networking, e o DevOps Cafe, que fala, obviamente sobre devops, e muito sobre gerência de
 					configuração, por exemplo.
+					</p>
 
-					Marquei aí alguns shows que eu achei especialmente bons, como ...
+					<p>Marquei aí alguns shows que eu achei especialmente bons, como ...</p>
 				</aside> 
 			</section>
 		</section>
@@ -849,18 +894,24 @@ $ sudo lsof | awk '{print $1}' | sort | uniq -c | sort -rn | head
 			<p>Reatividade é o inimigo. E lembre que <b>SEMPRE</b> temos algo pra fazer.</p>
 			<aside class="notes">
 
+			<p>
 			Muitas vezes as circuntâncias do nosso trabalho nos levam a ficar só reagindo aos problemas e demandas que chegam
 			para a gente. Mas tem que lutar contra isso e buscar sempre espaço para a pró-atividade. Espaço para pensar
 			sobre o que gente tá fazendo, pensar como melhorar, espaço pra afiar o nosso machado.
+			</p>
 			
+			<p>
 			Às vezes a reação vira um vício, e mesmo que surja o espaço para fazer algo mais, a gente acaba não aproveitando.
 			A gente não é garçon. Se não tem ninguém te chamando ou dizendo o que fazer, então aproveita! Inventa alguma
 			coisa, testa, pesquisa, fuça. Na dúvida, tem aqui nesses slides um farto material para estudo.
+			</p>
 
+			<p>
 			E eu não tô dizendo que um sysadmin não descansa nunca, a gente pode descansar, pode jogar papo fora ou ficar
 			vendo bobagem na Internet. Mas é pra dar uma folga, porque o dia tá calmo, pq tá de saco cheio, mas jamais, nunca,
 			porque "não tem nada para fazer". Não te engana com isso. É só procurar. Se tu escolheu ser um sysadmin SEMPRE vai
 			ter alguma coisa a fazer. 
+			</p>
 			</aside>
 		</section>
 
